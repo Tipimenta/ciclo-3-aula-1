@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Julee&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+main{
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .container .logo{
+    margin-top: 100px;
+    margin-bottom: 68px;
+}
+
+main .container .logo img{
+    width: 381px;
+    height: 100%;
+}
+
+main .container .form{
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .form label {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+main .container .form input, .taxa{
+    width: 400px;
+    height: 42px;
+    padding: 4px 3px 4px 12px;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 7px;
+}
+
+.taxa{
+  width: 415px;
+  height: 46px;
+}
+
+main .container .form input::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color:#6B7888;
+}
+
+main .form button{
+    margin-top: 40px;
+    background-color: #27485D;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #CCCCCC;
+    font-family: "Space Grotesk", sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.688);
+   
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    border: 1px solid #DEE2E6;
+    width: 465px;
+    height: 194px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 20px 20px 0px #00000014;
+    box-shadow: 0px 0px 2px 0px #0000001F;
+    border-radius: 8px;
+  }
+
+  .modal-content h2{
+    margin-top: 36px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    color: #54595E;
+    margin-bottom: 8px;
+  }
+
+  
+  .modal-content p{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #54595E;
+   
+  }
+
+  .modal-content .buttons{
+    margin-top: 24px;
+    display: flexbox;
+    
+  }
+
+  .modal-content .nao, .modal-content .sim {
+    border: 1px solid #4F4F4F;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 14px 20px;
+    width: 180.2px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .modal-content .sim:last-child{
+    margin-left: 24px;
+    background-color: #284A5E;
+    color: #fff;
+  }
+
+  .concluir{
+    text-transform: uppercase;
+    margin-top: 50px;
+    background-color: #27485D;
+    width: 385px;
+    border-radius: 8px;
+    border: 1px solid #CCCCCC;
+    font-family: "Space Grotesk", sans-serif;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .close {
+    color: #4F4F4F;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #E5E5E5;
+    padding: 4px;
+    border-radius: 29px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alerta{
+    color: red;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .aValorPositivo,
+  .aValorNumerico,
+  .aPagantesPositivo,
+  .aGorjetaPositivo,
+  .aGorjetaNumerico,
+  .aCamposVazios{
+   display: none;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria Patroni</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="Logo-Pizzeria-Patroni" />
+        </div>
+        <div class="form">
+          <span class="alerta aCamposVazios">* Favor preencher todos os campos</span>
+          <label for="">Valor total da conta:</label>
+          <input class="valorTotal" type="text" placeholder="R$ 100,00"/>          
+          <span class="alerta aValorPositivo">Digitar valor acima de 0</span>
+          <span class="alerta aValorNumerico">Digitar valor numérico</span>
+          <label for="">Incluir da taxa de serviço:</label>
+          <select class="taxa">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+          <label for="">Quantidade de pagantes:</label>
+          <input class="pagantes" type="number" placeholder="2" />
+          <span class="alerta aPagantesPositivo">Digitar valor acima de 0</span>
+          <label for="">Caso deseje favor adicionar valor da gorjeta.</label>
+          <input class="gorjetas" type="text" placeholder="" value="0" />
+          <span class="alerta aGorjetaPositivo">Digitar valor positivo</span>
+          <span class="alerta aGorjetaNumerico">Digitar valor numérico</span>
+          <button class="calcular">CALCULAR</button>
+        </div>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
